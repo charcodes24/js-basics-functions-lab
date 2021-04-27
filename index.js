@@ -14,11 +14,7 @@ function distanceFromHqInFeet(block) {
 };
 
 function distanceTravelledInFeet(start, end) {
-    if (start > end) {
-        return (start - end) * 264;
-    } else if (start < end) {
-        return (end - start) * 264;
-    };
+    return Math.abs((start - end) * 264);
 };
 
 function calculatesFarePrice(start, end) {
